@@ -1,7 +1,7 @@
 # Qtile-config
 
-![Qtile](./screen01.png)
-![Qtile2](./screen02.png)
+![Qtile](./Screenshot/screen01.png)
+![Qtile2](./Screenshot/screen02.png)
 
 ***Language***
 - [🇪🇸 Español](./README.es.md)
