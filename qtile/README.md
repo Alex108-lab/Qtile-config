@@ -1,6 +1,7 @@
 # Qtile
 
 ![Qtile](./screen01.png)
+![Qtile2](./screen02.png)
 
 ***Language***
 - [🇪🇸 Español](./README.es.md)
@@ -79,5 +80,5 @@ the name of the theme you want in a file named ```./config.json```:
 
 ```json
 {
-    "theme": "material-ocean"
+    "theme": "nord-wave"
 }
