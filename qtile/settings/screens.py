@@ -1,7 +1,4 @@
-# Antonio Sarosi
-# https://youtube.com/c/antoniosarosi
-# https://github.com/antoniosarosi/dotfiles
-
+#Alex108-lab
 # Multimonitor support
 
 from libqtile.config import Screen
