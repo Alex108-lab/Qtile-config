@@ -5,7 +5,7 @@
 
 ***Idioma***
 - 🇪🇸 Español
-- [🇺🇸 English](https://github.com/Alex108-lab/tree/master/qtile)
+- [🇺🇸 English](https://github.com/Alex108-lab/tree/master/Qtile-config/)
 
 ## Instalación (Arch)
 
