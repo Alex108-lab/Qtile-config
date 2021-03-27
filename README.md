@@ -3,52 +3,53 @@
 ![Qtile](./Screenshot/screen01.png)
 ![Qtile2](./Screenshot/screen02.png)
 
-***Language***
-- [🇪🇸 Español](./README.es.md)
-- 🇺🇸 English
+***Idioma***
+- 🇪🇸 Español
+- [🇺🇸 English](https://github.com/Alex108-lab/tree/master/qtile)
 
-## Installation (Arch based)
+## Instalación (Arch)
 
-Install Qtile and dependencies:
+Instala Qtile y las dependencias:
 
-```
+```bash
 sudo pacman -S qtile pacman-contrib
 yay -S nerd-fonts-ubuntu-mono
 pip install psutil
 ```
 
-Clone this repository and copy my configs:
+Clona este repositorio y copia mis configuraciones:
 
 ```bash
 git clone https://github.com/antoniosarosi/dotfiles.git
 cp -r dotfiles/.config/qtile ~/.config
 ```
 
-Test it with **[Xephyr](https://wiki.archlinux.org/index.php/Xephyr)**:
+Pruébalo con **[Xephyr](https://wiki.archlinux.org/index.php/Xephyr)**:
 
 ```bash
 Xephyr -br -ac -noreset -screen 1280x720 :1 &
 DISPLAY=:1 qtile
 ```
 
-If the network widget doesn't work check ```./settings/widgets.py``` and look
-for this line, you should find it inside a list called *primary_widgets*:
+Si el icono de la red no funciona, abre  ```./settings/widgets.py``` y busca
+esta línea, debería estar dentro de una lista llamada *primary_widgets*:
 
 ```python
-# Change interface arg, use ip address to find which one you need
+# Cambia el argumento "interface", usa ip address para saber cuál poner
  widget.Net(**base(bg='color3'), interface='wlp2s0'),
 ```
 
-Once that's done, you can login. But keep in mind keybindings will not work
-unless you have the same programs that I use and the same configs. You can
-either change keybindings or install the software I use and my config files,
-check out [this section](https://github.com/antoniosarosi/dotfiles#keybindings)
-for instructions.
+Una vez eso está hecho, puedes iniciar sesión. Pero recuerda que los atajos de
+teclado no funcionarán a no ser que tengas todos los programas que uso yo y las
+mismas configuraciones. Puedes cambiar los atajos de teclado o bien instalar el
+software que uso yo, mira
+[esta sección](https://github.com/antoniosarosi/dotfiles/blob/master/README.es.md#atajos-de-teclado)
+para las instrucciones.
 
-## Structure
+## Estructura
 
-In ```config.py```, which is the file where most people write all their config,
-I only have an *autostart* function and some other variables like
+En el archivo ```config.py``` que es donde la mayoría suele poner toda su
+configuración, yo solo tengo el *autostart* y algunas variables como
 *cursor_warp*.
 
 ```python
@@ -57,7 +58,8 @@ def autostart():
     subprocess.call([path.join(qtile_path, 'autostart.sh')])
 ```
 
-If you want to change *autostart* programs, open  ```./autostart.sh```.
+Para cambiar lo que se lanza en el *autostart* abre el archivo 
+```./autostart.sh```.
 
 ```bash
 #!/bin/sh
@@ -68,17 +70,18 @@ cbatticon -u 5 &
 volumeicon &
 ```
 
-If you want to modify keybindings, open ```./settings/keys.py```. To modify
-workspaces, use ```./settings/groups.py```. Finally, if you want to add more
-layouts, check ```./settings/layouts.py```, the rest of files don't need any
-configuration.
+Si quieres añadir o quitar atajos de teclado, abre ```./settings/keys.py```.
+Para añadir o quitar espacios de trabajos, debes modificar
+```./settings/groups.py```. Finalmente, si quieres añadir nuevos *layouts*,
+abre ```./settings/layouts.py```, el resto de archivos no hace falta tocarlos.
 
-## Themes
+## Temas
 
-To set a theme, check which ones are available in ```./themes```, and write
-the name of the theme you want in a file named ```./config.json```:
+Para establecer un tema, mira los que hay disponibles en ```./themes```, y
+coloca su nombre en un archivo llamado ```./config.json```:
 
 ```json
 {
-    "theme": "nord-wave"
+    "theme": "material-ocean"
 }
+```
