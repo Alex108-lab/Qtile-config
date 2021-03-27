@@ -20,22 +20,19 @@ pip install psutil
 Clona este repositorio y copia mis configuraciones:
 
 ```bash
-git clone https://github.com/antoniosarosi/dotfiles.git
-cp -r dotfiles/.config/qtile ~/.config
+git clone https://github.com/Alex108-lab/Qtile-config.git
+cp -r Qtile-config/qtile ~/.config/
 ```
 
 Si el icono de la red no funciona, abre  ```./settings/widgets.py``` y busca
 esta línea, debería estar dentro de una lista llamada *primary_widgets*:
 
 ```python
-# Cambia el argumento "interface", usa ip address para saber cuál poner
+# Cambia el argumento "interface", usa ip address o ip link para saber cuál poner
  widget.Net(**base(bg='color3'), interface='wlp2s0'),
 ```
 
-Una vez eso está hecho, puedes iniciar sesión. Pero recuerda que los atajos de
-teclado no funcionarán a no ser que tengas todos los programas que uso yo y las
-mismas configuraciones. Puedes cambiar los atajos de teclado o bien instalar el
-software que uso yo, mira
+Una vez eso está hecho, puedes iniciar sesion, para que los atajos de teclado funcionen mira
 [esta sección](https://github.com/antoniosarosi/dotfiles/blob/master/README.es.md#atajos-de-teclado)
 para las instrucciones.
 
@@ -59,8 +56,12 @@ Para cambiar lo que se lanza en el *autostart* abre el archivo
 
 # systray battery icon
 cbatticon -u 5 &
+
 # systray volume
 volumeicon &
+
+# wifi icon
+nm-applet &
 ```
 
 Si quieres añadir o quitar atajos de teclado, abre ```./settings/keys.py```.
