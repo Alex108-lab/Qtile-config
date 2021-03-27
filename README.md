@@ -5,7 +5,7 @@
 
 ***Idioma***
 - 🇪🇸 Español
-- [🇺🇸 English](https://github.com/Alex108-lab/tree/master/Qtile-config/)
+- [🇺🇸 English](./README.en.md)
 
 ## Instalación (Arch)
 
@@ -22,13 +22,6 @@ Clona este repositorio y copia mis configuraciones:
 ```bash
 git clone https://github.com/antoniosarosi/dotfiles.git
 cp -r dotfiles/.config/qtile ~/.config
-```
-
-Pruébalo con **[Xephyr](https://wiki.archlinux.org/index.php/Xephyr)**:
-
-```bash
-Xephyr -br -ac -noreset -screen 1280x720 :1 &
-DISPLAY=:1 qtile
 ```
 
 Si el icono de la red no funciona, abre  ```./settings/widgets.py``` y busca
