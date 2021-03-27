@@ -1,6 +1,6 @@
 # Qtile
 
-![Qtile](../../.screenshots/qtile.png)
+![Qtile](./screen01)
 
 ***Language***
 - [🇪🇸 Español](./README.es.md)
