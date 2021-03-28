@@ -33,7 +33,7 @@ esta línea, debería estar dentro de una lista llamada *primary_widgets*:
 ```
 
 Una vez eso está hecho, puedes iniciar sesion, para que los atajos de teclado funcionen mira
-[esta sección](https://github.com/antoniosarosi/dotfiles/blob/master/README.es.md#atajos-de-teclado)
+[esta sección]
 para las instrucciones.
 
 ## Estructura
@@ -62,6 +62,8 @@ volumeicon &
 
 # wifi icon
 nm-applet &
+
+# pamac-tray &
 ```
 
 Si quieres añadir o quitar atajos de teclado, abre ```./settings/keys.py```.
