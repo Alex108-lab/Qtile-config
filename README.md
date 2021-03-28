@@ -16,7 +16,7 @@ yay -S nerd-fonts-ubuntu-mono
 pip install psutil
 ```
 
-Clona este repositorio y copia mis configuraciones:
+Clona este repositorio o tambien descargalo en zip y copia mis configuraciones:
 
 ```bash
 git clone https://github.com/Alex108-lab/Qtile-config.git
@@ -100,7 +100,7 @@ coloca su nombre en un archivo llamado ```./config.json```:
 Los siguientes atajos de teclado funcionarán solo si instalas los programas:
 
 ```bash
-sudo pacman -S rofi thunar chromium alacritty redshift scrot
+sudo pacman -S rofi thunar chromium alacritty termite redshift scrot
 ```
 
 ## Apps
@@ -156,7 +156,7 @@ sudo pacman -S rofi thunar chromium alacritty redshift scrot
 | Software                                                              | Utilidad                           |
 | --------------------------------------------------------------------- | ---------------------------------- |
 | **[alacritty](https://wiki.archlinux.org/index.php/Alacritty)**       | Emulador de Terminal               |
-| **[termite](https://wiki.archlinux.org/index.php/termite)             | Emulador de Terminal               |
+| **[termite](https://wiki.archlinux.org/index.php/termite)**           | Emulador de Terminal               |
 | **[thunar](https://wiki.archlinux.org/index.php/Thunar)**             | Gestor de archivos gráfico         |
 | **[ranger](https://wiki.archlinux.org/index.php/Ranger)**             | Gestor de archivos de terminal     |
 | **[neovim](https://wiki.archlinux.org/index.php/Neovim)**             | Editor de texto basado en terminal |
