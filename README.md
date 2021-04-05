@@ -1,7 +1,6 @@
 # Qtile-config
 
 ![Qtile](./Screenshot/screen01.png)
-![Qtile2](./Screenshot/screen02.png)
 
 ***Idioma***
 - 🇪🇸 Español
