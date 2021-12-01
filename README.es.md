@@ -5,7 +5,7 @@
 **_Idioma_**
 
 - Español
-- [English](./README.en.md)
+- [English](./README.md)
 
 ## Instalación (Arch)
 
