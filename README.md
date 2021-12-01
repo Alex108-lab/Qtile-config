@@ -20,8 +20,8 @@ pip install psutil
 Clone this repository and copy my configs:
 
 ```bash
-git clone https://github.com/antoniosarosi/dotfiles.git
-cp -r dotfiles/.config/qtile ~/.config
+git clone https://github.com/Alex108-lab/Qtile-config.git
+cp -r Qtile-config/qtile ~/.config/
 ```
 
 Test it with **[Xephyr](https://wiki.archlinux.org/index.php/Xephyr)**:
